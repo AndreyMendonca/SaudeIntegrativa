@@ -4,8 +4,8 @@ import { Clock, Dot, Facebook, Instagram, MapPin, Stethoscope } from "lucide-rea
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Importa os estilos do AOS
+import AOS from 'aos';
+import "aos/dist/aos.css"; 
 import Servicos from "@/componentes/servicos";
 import { Sobre } from "@/componentes/sobre";
 import Beneficios from "@/componentes/beneficios";

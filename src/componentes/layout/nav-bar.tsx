@@ -9,17 +9,27 @@ export default function Navbar() {
 
     return (
         <div className="flex items-center justify-between bg-white shadow-md px-10">
-            <Link href="/"> 
+            <Link href="/">
                 <Image src="/logo.jpg" height={80} width={240} alt="Logo" />
             </Link>
-            
+
             <div className="flex justify-between items-center">
                 <div className="hidden xl:flex gap-10 items-center">
-                    <a href="/" className="hover:text-green-700 text-xl font-semibold">Home</a>
-                    <a href="/servicos" className="hover:text-green-700 text-xl font-semibold">Serviços</a>
-                    <a href="/planos" className="hover:text-green-700 text-xl font-semibold">Planos</a>
-                    <a href="/franquias" className="hover:text-green-700 text-xl font-semibold">Franquias</a>
-                    <a href="/contatos" className="hover:text-green-700 text-xl font-semibold">Contatos</a>
+                    <Link href="/" className="hover:text-green-700 text-xl font-semibold">
+                        Home
+                    </Link>
+                    <Link href="/servicos" className="hover:text-green-700 text-xl font-semibold">
+                        Serviços
+                    </Link>
+                    <Link href="/planos" className="hover:text-green-700 text-xl font-semibold">
+                        Planos
+                    </Link>
+                    <Link href="/franquias" className="hover:text-green-700 text-xl font-semibold">
+                        Franquias
+                    </Link>
+                    <Link href="/contatos" className="hover:text-green-700 text-xl font-semibold">
+                        Contatos
+                    </Link>
                 </div>
             </div>
 
@@ -50,11 +60,21 @@ export default function Navbar() {
                 className={`absolute z-10 top-20 left-0 w-full bg-white shadow-md flex flex-col items-center gap-6 py-6 transition-all duration-500 ease-in-out xl:hidden ${open ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
                     }`}
             >
-                <a href="#" className="hover:text-green-700 text-lg font-semibold">Home</a>
-                <a href="#" className="hover:text-green-700 text-lg font-semibold">Serviços</a>
-                <a href="#" className="hover:text-green-700 text-lg font-semibold">Sobre</a>
-                <a href="#" className="hover:text-green-700 text-lg font-semibold">Franquias</a>
-                <a href="#" className="hover:text-green-700 text-lg font-semibold">Parceiros</a>
+                <Link href="/" className="hover:text-green-700 text-lg font-semibold">
+                    Home
+                </Link>
+                <Link href="/servicos" className="hover:text-green-700 text-lg font-semibold">
+                    Serviços
+                </Link>
+                <Link href="/sobre" className="hover:text-green-700 text-lg font-semibold">
+                    Sobre
+                </Link>
+                <Link href="/franquias" className="hover:text-green-700 text-lg font-semibold">
+                    Franquias
+                </Link>
+                <Link href="/parceiros" className="hover:text-green-700 text-lg font-semibold">
+                    Parceiros
+                </Link>
             </div>
         </div>
     );

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -8,13 +9,17 @@ export default function Navbar() {
 
     return (
         <div className="flex items-center justify-between bg-white shadow-md px-10">
-            <Image src="/logo.jpg" height={80} width={240} alt="Logo" />
+            <Link href="/"> 
+                <Image src="/logo.jpg" height={80} width={240} alt="Logo" />
+            </Link>
+            
             <div className="flex justify-between items-center">
                 <div className="hidden xl:flex gap-10 items-center">
-                    <a href="#" className="hover:text-green-700 text-xl font-semibold">Home</a>
-                    <a href="#" className="hover:text-green-700 text-xl font-semibold">Serviços</a>
-                    <a href="#" className="hover:text-green-700 text-xl font-semibold">Franquias</a>
-                    <a href="#" className="hover:text-green-700 text-xl font-semibold">Parceiros</a>
+                    <a href="/" className="hover:text-green-700 text-xl font-semibold">Home</a>
+                    <a href="/servicos" className="hover:text-green-700 text-xl font-semibold">Serviços</a>
+                    <a href="/planos" className="hover:text-green-700 text-xl font-semibold">Planos</a>
+                    <a href="/franquias" className="hover:text-green-700 text-xl font-semibold">Franquias</a>
+                    <a href="/contatos" className="hover:text-green-700 text-xl font-semibold">Contatos</a>
                 </div>
             </div>
 

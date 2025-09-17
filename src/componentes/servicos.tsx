@@ -11,6 +11,7 @@ import {
   HeartHandshake,
   Scissors,
   MoreHorizontal,
+  Laugh,
 } from "lucide-react";
 
 export default function Servicos() {
@@ -19,7 +20,7 @@ export default function Servicos() {
     { icon: FlaskConical, label: "Exames Laboratoriais" },
     { icon: ImageIcon, label: "Exames de Imagem" },
     { icon: Apple, label: "Serviços de Nutrição" },
-    { icon: Bone, label: "Odontologia" },
+    { icon: Laugh, label: "Odontologia" },
     { icon: Brain, label: "Psicologia" },
     { icon: Activity, label: "Fisioterapia" },
     { icon: HeartHandshake, label: "Método ABA" },

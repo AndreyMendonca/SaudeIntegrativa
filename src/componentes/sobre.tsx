@@ -21,10 +21,10 @@ export const Sobre = () => {
                     </h3>
                 </header>
 
-                <p className="text-gray-600 leading-relaxed text-lg">
+                <p className="text-gray-600 leading-relaxed text-lg text-justify">
                     Acreditamos que a verdadeira saúde vai além da ausência de doenças.
                     Ela é um estado de completo bem-estar físico, mental e emocional.
-                    Na <span className="font-semibold text-green-700">Saúde Integrativa Birigui</span>,
+                    Na <span className="font-semibold text-green-700">Saúde Integrativa</span>,
                     nosso propósito é entender você como um todo. Unimos o melhor da
                     medicina convencional e das terapias complementares para criar um
                     plano de tratamento único, focado em restaurar o equilíbrio natural

@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function FaixaWhatsapp() {
   return (
     <div className="bg-white border-b border-gray-200 py-3">
-      <div className="container mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-center md:justify-between gap-4 text-center md:text-left">
-        
+      <div className="container mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-center gap-20 text-center md:text-left">
+
         {/* Comercial Birigui */}
         <Link
           href="https://api.whatsapp.com/send/?phone=5518991858235&text&type=phone_number&app_absent=0"

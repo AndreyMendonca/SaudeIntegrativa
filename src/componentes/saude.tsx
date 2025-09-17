@@ -20,7 +20,7 @@ export default function Saude() {
       icon: Pill,
       titulo: "Tratamentos",
       descricao:
-        "Você receberá orientações, as receitas dos medicamentos e exames, caso necessários.",
+        "Cuidado completo para sua saúde, com tratamentos personalizados e acompanhamento seguro.",
     },
   ];
 

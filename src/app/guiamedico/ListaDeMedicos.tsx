@@ -1,9 +1,7 @@
 "use client"
 import { Medico } from "@/types/medico"
 import medicos from "@/data/guiamedico.json";
-import { LayoutDefault } from "@/componentes/layout/layoutDefault";
 import { useSearchParams } from "next/navigation";
-import BuscaGuia from "@/componentes/busca-guia";
 
 export default function ListaDeMedicos() {
     const searchParams = useSearchParams();

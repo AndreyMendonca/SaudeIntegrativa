@@ -8,18 +8,6 @@ import ListaDeMedicos from "./ListaDeMedicos";
 import { Suspense } from "react";
 
 export default function GuiaMedicoPage() {
-    const searchParams = useSearchParams();
-    const cidade = searchParams.get("cidade") || "";
-    const especialidade = searchParams.get("especialidade") || "";
-    const dados: Medico[] = medicos;
-
-    const dadosFiltrados = dados.filter((m) => {
-        const matchCidade = cidade ? m.MUNICIPIO === cidade : true;
-        const matchEspecialidade = especialidade
-            ? m.ESPECIALIDADES === especialidade
-            : true;
-        return matchCidade && matchEspecialidade;
-    });
 
     return (
         <LayoutDefault>

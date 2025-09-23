@@ -4,10 +4,8 @@ import medicos from "@/data/guiamedico.json";
 import { LayoutDefault } from "@/componentes/layout/layoutDefault";
 import { useSearchParams } from "next/navigation";
 import BuscaGuia from "@/componentes/busca-guia";
-import ListaDeMedicos from "./ListaDeMedicos";
-import { Suspense } from "react";
 
-export default function GuiaMedicoPage() {
+export default function ListaDeMedicos() {
     const searchParams = useSearchParams();
     const cidade = searchParams.get("cidade") || "";
     const especialidade = searchParams.get("especialidade") || "";
@@ -22,14 +20,17 @@ export default function GuiaMedicoPage() {
     });
 
     return (
-        <LayoutDefault>
-            <div className="bg-zinc-100 flex justify-center">
-                <BuscaGuia />
-            </div>
-            <Suspense fallback={<div className="text-center p-4">Carregando médicos...</div>}>
-                <ListaDeMedicos />
-            </Suspense>
-        </LayoutDefault>
-
+        <>
+            {dadosFiltrados.map((m, index) => (
+                <div key={index} className="p-4 border rounded-md mb-2 w-full max-w-xl mx-auto">
+                    <h3 className="font-bold">{m.NOMES}</h3>
+                    <p>{m.ESPECIALIDADES} - {m.MUNICIPIO}</p>
+                    <p>{m.ENDEREÇO}</p>
+                    <a href={m.Link} target="_blank" className="text-blue-500 underline">
+                        Ver no mapa
+                    </a>
+                </div>
+            ))}
+        </>
     )
 }

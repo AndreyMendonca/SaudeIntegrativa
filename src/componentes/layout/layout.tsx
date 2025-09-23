@@ -5,6 +5,7 @@ import { Tela } from "./tela"
 import { Footer } from "./footer"
 import { Whatsapp } from "./whatsapp"
 import Servicos from "../servicos"
+import BuscaGuia from "../busca-guia"
 
 type Props = {
     children: ReactNode
@@ -16,8 +17,8 @@ export const Layout = ({children }: Props) => {
             <div className="h-screen flex flex-col">
                 <HeaderP />
                 <Navbar />
-                <div className="h-20 bg-zinc-100">
-
+                <div className="bg-zinc-100 flex justify-center">
+                    <BuscaGuia/>
                 </div>
                 <Tela />
             </div>

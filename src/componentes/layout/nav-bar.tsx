@@ -66,14 +66,14 @@ export default function Navbar() {
                 <Link href="/servicos" className="hover:text-green-700 text-lg font-semibold">
                     Serviços
                 </Link>
-                <Link href="/sobre" className="hover:text-green-700 text-lg font-semibold">
-                    Sobre
+                <Link href="/planos" className="hover:text-green-700 text-lg font-semibold">
+                    Planos
                 </Link>
                 <Link href="/franquias" className="hover:text-green-700 text-lg font-semibold">
                     Franquias
                 </Link>
-                <Link href="/parceiros" className="hover:text-green-700 text-lg font-semibold">
-                    Parceiros
+                <Link href="/contatos" className="hover:text-green-700 text-lg font-semibold">
+                    Contatos
                 </Link>
             </div>
         </div>

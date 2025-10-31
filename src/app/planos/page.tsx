@@ -4,30 +4,30 @@ import { CheckCircle } from "lucide-react";
 export default function PlanosPage() {
     const planos = [
         {
-            nome: "Plano Essencial",
-            preco: "R$ 29,90/mês",
+            nome: "Plano Individual",
+            preco: "R$ 24,90/mês",
             beneficios: [
-                "Consultas médicas com preço reduzido",
-                "Exames laboratoriais com desconto",
-                "Acesso a clínico geral gratuito",
-                "Atendimento prioritário na recepção",
+                "Consultas médicas com valores acessíveis",
+                "Exames laboratoriais e de imagem com até 80% de desconto",
+                "Clínico geral gratuito",
+                "Sem carência",
             ],
         },
         {
-            nome: "Plano Premium",
-            preco: "R$ 59,90/mês",
+            nome: "Plano Familiar",
+            preco: "R$ 49,90/mês",
             beneficios: [
-                "Todas as vantagens do Essencial",
-                "Descontos em exames de imagem",
-                "Sessões de psicologia com valor diferenciado",
-                "Nutricionista e fisioterapia inclusos no plano",
+                "Todas as vantagens do plano individual",
+                "Para toda a família: titular, cônjuge, filhos até 18 anos e pais do titular",
+                "Valor de R$ 7,00 por carteirinha de dependente",
             ],
         },
     ];
+
     return (
         <LayoutDefault>
             <section className="bg-green-700 py-16 px-6 md:px-20">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-6xl mx-auto" data-aos="fade-up">
                     {/* Título */}
                     <h2
                         className="text-3xl md:text-5xl font-bold mb-12 text-center text-white"
@@ -38,8 +38,8 @@ export default function PlanosPage() {
 
                     {/* Grid de planos */}
                     <div
-                        className="grid grid-cols-1 md:grid-cols-2 gap-10"
-                        data-aos="fade-up"
+                        className="grid grid-cols-1 mb-10 md:grid-cols-2 gap-10"
+                        
                     >
                         {planos.map((plano, idx) => (
                             <div
@@ -59,16 +59,51 @@ export default function PlanosPage() {
                                         </li>
                                     ))}
                                 </ul>
-
-                                {/* Botão CTA */}
-                                <button className="mt-8 bg-green-700 text-white font-bold px-6 py-3 rounded-lg shadow-md hover:bg-green-900 transition">
-                                    Quero este plano
-                                </button>
                             </div>
                         ))}
+                    </div>
+
+                    {/* Plano Empresarial */}
+                    <div
+                        className="bg-white text-green-700 rounded-2xl shadow-lg p-10 flex flex-col items-center transition transform hover:scale-105 hover:shadow-2xl"
+                    >
+                        <h3 className="text-3xl font-extrabold text-center mb-2">
+                            Plano Empresarial
+                        </h3>
+                        <p className="text-center text-lg mb-6 opacity-80">
+                            Solução ideal para empresas que desejam oferecer saúde e bem-estar aos colaboradores.
+                        </p>
+
+                        <div className="flex w-full flex-col md:flex-row gap-5 mb-8">
+                            <div className="flex-1 bg-green-700 text-white font-bold px-6 py-3 rounded-lg shadow-md text-center hover:bg-green-900 transition">
+                                <p className="block text-sm opacity-80">Por colaborador</p>
+                                <p className="text-xl font-extrabold">Individual</p>
+                                <p className="text-xl font-extrabold">R$ 24,90</p>
+                            </div>
+                            <div className="flex-1 bg-green-700 text-white font-bold px-6 py-3 rounded-lg shadow-md text-center hover:bg-green-900 transition">
+                                <p className="block text-sm opacity-80">Com dependentes</p>
+                                <p className="text-xl font-extrabold">Familiar</p>
+                                <p className="text-xl font-extrabold">R$ 49,90</p>
+                            </div>
+                        </div>
+
+                        <ul className="flex-1 space-y-4 max-w-md w-full">
+                            <li className="flex items-start gap-3">
+                                <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0 mt-1" />
+                                <span>Todas as vantagens do plano familiar</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0 mt-1" />
+                                <span>Atendimento personalizado para empresas e colaboradores</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <CheckCircle className="w-5 h-5 text-green-300 flex-shrink-0 mt-1" />
+                                <span>Planos flexíveis conforme o número de funcionários</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
         </LayoutDefault>
-    )
+    );
 }

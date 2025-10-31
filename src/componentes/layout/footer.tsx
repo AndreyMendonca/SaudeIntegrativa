@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <footer className="bg-green-700 text-white py-10">
+        <footer className="bg-white text-green-700 py-10">
             <div className="container mx-auto px-6 md:px-20">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
 
@@ -14,7 +14,7 @@ export const Footer = () => {
                     {/* Endereço */}
                     <div>
                         <h3 className="text-lg font-semibold mb-3">Endereço</h3>
-                        <p>Av São Francisco, 632</p>
+                        <p>Av. São Francisco, 632</p>
                         <p>Jardim Pérola - Birigui - SP</p>
                     </div>
 
@@ -27,7 +27,7 @@ export const Footer = () => {
                 </div>
 
                 {/* Linha final */}
-                <div className="border-t border-white/20 mt-8 pt-4 text-center text-sm opacity-80">
+                <div className="border-t border-green-700/20 mt-8 pt-4 text-center text-sm opacity-80">
                     <p>© {new Date().getFullYear()} Saúde Integrativa Birigui. Todos os direitos reservados.</p>
                 </div>
             </div>

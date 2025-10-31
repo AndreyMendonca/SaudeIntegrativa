@@ -14,9 +14,11 @@ export default function GuiaMedicoPage() {
             <div className="bg-zinc-100 flex justify-center">
                 <BuscaGuia />
             </div>
-            <Suspense fallback={<div className="text-center p-4">Carregando médicos...</div>}>
-                <ListaDeMedicos />
-            </Suspense>
+            <div className="py-8 bg-green-600">
+                <Suspense fallback={<div className="text-center p-4">Carregando médicos...</div>}>
+                    <ListaDeMedicos />
+                </Suspense>
+            </div>
         </LayoutDefault>
 
     )

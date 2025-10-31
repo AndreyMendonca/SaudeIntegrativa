@@ -57,7 +57,7 @@ export default function Navbar() {
 
             {/* menu dropdown (mobile) */}
             <div
-                className={`absolute z-10 top-20 left-0 w-full bg-white shadow-md flex flex-col items-center gap-6 py-6 transition-all duration-500 ease-in-out xl:hidden ${open ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
+                className={`absolute z-10 top-20 left-0 w-full bg-white text-black shadow-md flex flex-col items-center gap-6 py-6 transition-all duration-500 ease-in-out xl:hidden ${open ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
                     }`}
             >
                 <Link href="/" className="hover:text-green-700 text-lg font-semibold">

@@ -1,6 +1,6 @@
 export const Sobre = () => {
     return (
-        <section className="w-[80%] mx-auto py-16 px-5 flex flex-col lg:flex-row items-center gap-10" data-aos="fade-up">
+        <section className="w-[80%] mx-auto py-16 px-5 flex flex-col lg:flex-row items-center gap-10 bg-white" data-aos="fade-up">
             {/* Imagem com semântica */}
             <figure className="flex-1">
                 <img

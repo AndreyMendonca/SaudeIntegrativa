@@ -1,8 +1,11 @@
 export const Sobre = () => {
     return (
-        <section className="w-[80%] mx-auto py-16 px-5 flex flex-col lg:flex-row items-center gap-10 bg-white" data-aos="fade-up">
+        <section
+            className="max-w-6xl mx-auto py-16 px-5 flex flex-col lg:flex-row items-center gap-10 bg-white"
+            
+        >
             {/* Imagem com semântica */}
-            <figure className="flex-1">
+            <figure className="flex-1" data-aos="fade-up">
                 <img
                     src="/clinica.jpg"
                     alt="Clínica Saúde Integrativa Birigui"
@@ -11,7 +14,7 @@ export const Sobre = () => {
             </figure>
 
             {/* Texto */}
-            <article className="flex-1 space-y-6">
+            <article className="flex-1 space-y-6" data-aos="fade-up">
                 <header>
                     <h2 className="text-green-700 text-sm font-semibold tracking-widest uppercase">
                         Sobre a Saúde Integrativa
